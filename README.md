@@ -6,12 +6,12 @@ It automates the process of collecting stock market data, cleaning and transform
 I wanted to work on a real-world use case where automation, scalability, and security all come together — and the stock market provided the perfect dataset for it.
 
 ## Why I built this 
-As part of my journey in AI/ML and data engineering, I wanted to:
-Learn how to design and implement an end-to-end ETL pipeline.
-Get hands-on experience with PySpark for large-scale data transformation.
-Integrate with Azure to understand cloud storage and access control.
-Automate workflows using Jenkins for real-time scheduling.
-This project gave me the opportunity to combine Python, big data frameworks, and cloud technologies in a practical way.
+1.As part of my journey in AI/ML and data engineering, I wanted to:
+2.Learn how to design and implement an end-to-end ETL pipeline.
+3.Get hands-on experience with PySpark for large-scale data transformation.
+4.Integrate with Azure to understand cloud storage and access control.
+5.Automate workflows using Jenkins for real-time scheduling.
+6.This project gave me the opportunity to combine Python, big data frameworks, and cloud technologies in a practical way.
 
 ## Features
 Automated Data Ingestion – Fetches daily stock data from Yahoo Finance.
@@ -45,8 +45,8 @@ pip install -r requirements.txt
 4. Configuration
 Create a .env file:
 
-AZURE_STORAGE_ACCOUNT_NAME=your_account_name
-AZURE_STORAGE_ACCOUNT_KEY=your_access_key
+ * AZURE_STORAGE_ACCOUNT_NAME=your_account_name
+ * AZURE_STORAGE_ACCOUNT_KEY=your_access_key
 
 4. Run
 python data_collector.py

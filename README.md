@@ -1,19 +1,30 @@
 # Automated Financial Data Pipeline
 
 ## Overview
-This project is an end-to-end automated data pipeline designed to fetch financial data from Yahoo Finance, process it using PySpark, and store it securely in Azure Data Lake Gen2. The pipeline is orchestrated using Jenkins to ensure daily data updates and seamless automation. This project is a demonstration of key data engineering concepts, designed for scalability, security, and maintainability.
+This is a personal data engineering project I built to strengthen my skills in data pipelines, big data processing, and cloud integration.
+It automates the process of collecting stock market data, cleaning and transforming it using PySpark, and storing it securely in Azure Data Lake Gen2.
+I wanted to work on a real-world use case where automation, scalability, and security all come together — and the stock market provided the perfect dataset for it.
+
+## Why I built this 
+As part of my journey in AI/ML and data engineering, I wanted to:
+Learn how to design and implement an end-to-end ETL pipeline.
+Get hands-on experience with PySpark for large-scale data transformation.
+Integrate with Azure to understand cloud storage and access control.
+Automate workflows using Jenkins for real-time scheduling.
+This project gave me the opportunity to combine Python, big data frameworks, and cloud technologies in a practical way.
 
 ## Features
- 
-* **Daily Data Ingestion:** Automatically fetch stock market data using the Yahoo Finance API.
-* **Data Transformation:** Clean and process the data using PySpark to ensure high-quality outputs.
-* **Cloud Storage:** Store both raw and processed data in Azure Data Lake Gen2 with a well-structured hierarchy.
-* **Pipeline Automation:** Orchestrate the pipeline with Jenkins for hands-free operation.
-* **Secure Design:** Employ RBAC policies and securely manage credentials using Azure Key Vault and Jenkins.
+Automated Data Ingestion – Fetches daily stock data from Yahoo Finance.
+Data Transformation with PySpark – Cleans, structures, and optimizes data.
+Cloud Storage with Azure Data Lake Gen2 – Organizes raw and processed data securely.
+Secure Credentials Management – Uses Azure Key Vault and RBAC for access control.
+Jenkins Orchestration – Fully automated daily data refresh.
 
 ## Future Enhancements
-* **Data Visualization**
-* **Advanced Metrics**
+Add interactive dashboards for visualizing stock trends.
+Include advanced financial metrics and KPIs.
+Support real-time streaming from live stock APIs.
+Implement alert notifications for significant stock movements.
 
 ## Technologies Used
 
@@ -24,16 +35,20 @@ This project is an end-to-end automated data pipeline designed to fetch financia
 * **Security:** Azure Key Vault and RBAC for secure credential and access management. 
 
 ## Setup and Usage
-# Prerequisites
-* Python 3.8+ installed on your local system.
-* Azure account with access to Data Lake Gen2.
-* Jenkins installed and configured.
-# Steps to Run the Pipeline
-* 1.Clone the Repository
-* 2.Install Required Python Libraries
-* 3.Set Up Azure Data Lake
-* 4.Configure Jenkins Pipeline
-* 5.Run the Pipeline
+1. Prerequisites
+Python 3.8+ installed
+Azure Data Lake Gen2 account
 
-# Contact
-If you have any questions or suggestions regarding the project, feel free to contact me at [kiryakovkristiyan@gmail.com]
+2. Installation
+pip install -r requirements.txt
+
+4. Configuration
+Create a .env file:
+
+AZURE_STORAGE_ACCOUNT_NAME=your_account_name
+AZURE_STORAGE_ACCOUNT_KEY=your_access_key
+
+4. Run
+python data_collector.py
+python data_transform.py
+python azure_upload.py
